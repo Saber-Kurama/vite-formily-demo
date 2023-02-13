@@ -9,6 +9,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@formily/reactive": "^2.2.18",
+    "@formily/reactive-react": "^2.2.18",
+    "@formily/shared": "^2.2.18",
+    "@formily/validator": "^2.2.18",
     "@formily/antdv-x3": "latest",
     "@formily/core": "latest",
     "@formily/element-plus": "latest",

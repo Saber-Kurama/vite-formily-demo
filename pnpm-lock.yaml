@@ -4,6 +4,10 @@ specifiers:
   '@formily/antdv-x3': latest
   '@formily/core': latest
   '@formily/element-plus': latest
+  '@formily/reactive': ^2.2.18
+  '@formily/reactive-react': ^2.2.18
+  '@formily/shared': ^2.2.18
+  '@formily/validator': ^2.2.18
   '@formily/vue': latest
   '@vitejs/plugin-vue': ^4.0.0
   ant-design-vue: ^3.2.15
@@ -20,9 +24,13 @@ specifiers:
 
 dependencies:
   '@formily/antdv-x3': registry.npmjs.org/@formily/antdv-x3/1.0.0-alpha.5_prq2uz4lho2pwp6irk4cfkrxwu
-  '@formily/core': registry.npmjs.org/@formily/core/2.2.17
+  '@formily/core': registry.npmjs.org/@formily/core/2.2.18
   '@formily/element-plus': registry.npmjs.org/@formily/element-plus/1.0.0-beta.8_prq2uz4lho2pwp6irk4cfkrxwu
-  '@formily/vue': registry.npmjs.org/@formily/vue/2.2.17_prq2uz4lho2pwp6irk4cfkrxwu
+  '@formily/reactive': registry.npmjs.org/@formily/reactive/2.2.18
+  '@formily/reactive-react': registry.npmjs.org/@formily/reactive-react/2.2.18
+  '@formily/shared': registry.npmjs.org/@formily/shared/2.2.18
+  '@formily/validator': registry.npmjs.org/@formily/validator/2.2.18
+  '@formily/vue': registry.npmjs.org/@formily/vue/2.2.18_prq2uz4lho2pwp6irk4cfkrxwu
   ant-design-vue: registry.npmjs.org/ant-design-vue/3.2.15_vue@3.2.45
   element-plus: registry.npmjs.org/element-plus/2.2.28_vue@3.2.45
   resize-observer-polyfill: registry.npmjs.org/resize-observer-polyfill/1.5.1
@@ -401,13 +409,13 @@ packages:
     peerDependencies:
       vue: ^3.2.37
     dependencies:
-      '@formily/core': registry.npmjs.org/@formily/core/2.2.17
+      '@formily/core': registry.npmjs.org/@formily/core/2.2.18
       '@formily/grid': registry.npmjs.org/@formily/grid/2.2.17_typescript@4.9.4
       '@formily/json-schema': registry.npmjs.org/@formily/json-schema/2.2.17_typescript@4.9.4
-      '@formily/reactive': registry.npmjs.org/@formily/reactive/2.2.17
+      '@formily/reactive': registry.npmjs.org/@formily/reactive/2.2.18
       '@formily/reactive-vue': registry.npmjs.org/@formily/reactive-vue/2.2.17_vue@3.2.45
-      '@formily/shared': registry.npmjs.org/@formily/shared/2.2.17
-      '@formily/vue': registry.npmjs.org/@formily/vue/2.2.17_prq2uz4lho2pwp6irk4cfkrxwu
+      '@formily/shared': registry.npmjs.org/@formily/shared/2.2.18
+      '@formily/vue': registry.npmjs.org/@formily/vue/2.2.18_prq2uz4lho2pwp6irk4cfkrxwu
       moment: registry.npmjs.org/moment/2.29.4
       vue: registry.npmjs.org/vue/3.2.45
       vue-slicksort: registry.npmjs.org/vue-slicksort/2.0.3_vue@3.2.45
@@ -427,6 +435,17 @@ packages:
       '@formily/validator': registry.npmjs.org/@formily/validator/2.2.17
     dev: false
 
+  registry.npmjs.org/@formily/core/2.2.18:
+    resolution: {integrity: sha512-xwyMXIEMmETuTQMjbamNaZXHXx/vKiyUZ/9nSNBv72oncaYdf5DLGhtQHV+958zvrwD6HgkL3LZYBRLdFrlNpA==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/@formily/core/-/core-2.2.18.tgz}
+    name: '@formily/core'
+    version: 2.2.18
+    engines: {npm: '>=3.0.0'}
+    dependencies:
+      '@formily/reactive': registry.npmjs.org/@formily/reactive/2.2.18
+      '@formily/shared': registry.npmjs.org/@formily/shared/2.2.18
+      '@formily/validator': registry.npmjs.org/@formily/validator/2.2.18
+    dev: false
+
   registry.npmjs.org/@formily/element-plus/1.0.0-beta.8_prq2uz4lho2pwp6irk4cfkrxwu:
     resolution: {integrity: sha512-zXfzHVR4YpU4cWhPd/4mNhdEtDH1K/YcuisJp2AmrN8bDK26HCFIyp6Q+GdwzAZGPoF2wIafBQnhA3QetMxASQ==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/@formily/element-plus/-/element-plus-1.0.0-beta.8.tgz}
     id: registry.npmjs.org/@formily/element-plus/1.0.0-beta.8
@@ -437,13 +456,13 @@ packages:
       vue: ^3.2.24
     dependencies:
       '@element-plus/icons-vue': registry.npmjs.org/@element-plus/icons-vue/1.1.4_vue@3.2.45
-      '@formily/core': registry.npmjs.org/@formily/core/2.2.17
+      '@formily/core': registry.npmjs.org/@formily/core/2.2.18
       '@formily/grid': registry.npmjs.org/@formily/grid/2.2.17_typescript@4.9.4
       '@formily/json-schema': registry.npmjs.org/@formily/json-schema/2.2.17_typescript@4.9.4
-      '@formily/reactive': registry.npmjs.org/@formily/reactive/2.2.17
+      '@formily/reactive': registry.npmjs.org/@formily/reactive/2.2.18
       '@formily/reactive-vue': registry.npmjs.org/@formily/reactive-vue/2.2.17_vue@3.2.45
-      '@formily/shared': registry.npmjs.org/@formily/shared/2.2.17
-      '@formily/vue': registry.npmjs.org/@formily/vue/2.2.17_prq2uz4lho2pwp6irk4cfkrxwu
+      '@formily/shared': registry.npmjs.org/@formily/shared/2.2.18
+      '@formily/vue': registry.npmjs.org/@formily/vue/2.2.18_prq2uz4lho2pwp6irk4cfkrxwu
       element-plus: registry.npmjs.org/element-plus/2.2.28_vue@3.2.45
       resize-observer-polyfill: registry.npmjs.org/resize-observer-polyfill/1.5.1
       vue: registry.npmjs.org/vue/3.2.45
@@ -483,11 +502,54 @@ packages:
       typescript: registry.npmjs.org/typescript/4.9.4
     dev: false
 
+  registry.npmjs.org/@formily/json-schema/2.2.18_typescript@4.9.4:
+    resolution: {integrity: sha512-GGPbbiqFaUKY2GSYZCa6zW5nJVzoWzA6CZrHj/kzDogrMRwV8Go7I4zwmiLXt4FIqzGRq/rLl7JYAq9uMRYnAA==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/@formily/json-schema/-/json-schema-2.2.18.tgz}
+    id: registry.npmjs.org/@formily/json-schema/2.2.18
+    name: '@formily/json-schema'
+    version: 2.2.18
+    engines: {npm: '>=3.0.0'}
+    peerDependencies:
+      typescript: ^4.1.5
+    dependencies:
+      '@formily/core': registry.npmjs.org/@formily/core/2.2.18
+      '@formily/reactive': registry.npmjs.org/@formily/reactive/2.2.18
+      '@formily/shared': registry.npmjs.org/@formily/shared/2.2.18
+      typescript: registry.npmjs.org/typescript/4.9.4
+    dev: false
+
   registry.npmjs.org/@formily/path/2.2.17:
     resolution: {integrity: sha512-SuqX5nsQE1uebqhBKBx65a+fG7/V0JfNnCAUIiHOnlSeijlQwVSs/0AZIE+Ukqn7xwsrbev709NH+/9Nlpx5Kg==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/@formily/path/-/path-2.2.17.tgz}
     name: '@formily/path'
     version: 2.2.17
     engines: {npm: '>=3.0.0'}
+    dev: false
+
+  registry.npmjs.org/@formily/path/2.2.18:
+    resolution: {integrity: sha512-Xw+T76cKnlFOcpGJsj/QzDswbPnBTkQInU57GQqnnCmBKwVpYiYg60HGevUjg0tSngFjWGJVZayRkOAKyp/SxQ==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/@formily/path/-/path-2.2.18.tgz}
+    name: '@formily/path'
+    version: 2.2.18
+    engines: {npm: '>=3.0.0'}
+    dev: false
+
+  registry.npmjs.org/@formily/reactive-react/2.2.18:
+    resolution: {integrity: sha512-STGr+R3hbowlVcpTXaC1km/Fi5UGYqYL6XTSX/rY9taf10cdn9sJ5t547uAqQOAF7lHyEs353b1H83xECTv7gA==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/@formily/reactive-react/-/reactive-react-2.2.18.tgz}
+    name: '@formily/reactive-react'
+    version: 2.2.18
+    engines: {npm: '>=3.0.0'}
+    peerDependencies:
+      '@types/react': '>=16.8.0'
+      '@types/react-dom': '>=16.8.0'
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+      react-is: '>=16.8.0'
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      '@types/react-dom':
+        optional: true
+    dependencies:
+      '@formily/reactive': registry.npmjs.org/@formily/reactive/2.2.18
+      hoist-non-react-statics: registry.npmjs.org/hoist-non-react-statics/3.3.2
     dev: false
 
   registry.npmjs.org/@formily/reactive-vue/2.2.17_vue@3.2.45:
@@ -508,10 +570,35 @@ packages:
       vue-demi: registry.npmjs.org/vue-demi/0.13.11_vue@3.2.45
     dev: false
 
+  registry.npmjs.org/@formily/reactive-vue/2.2.18_vue@3.2.45:
+    resolution: {integrity: sha512-dyJxmki/Ynp7RH8zJPeNR0I26bEQi0RtuTP1OUFLcRWhlHUvNTOIHxMvZE/tC3etZp+9qlQT5QGoBXBC2bgQyg==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/@formily/reactive-vue/-/reactive-vue-2.2.18.tgz}
+    id: registry.npmjs.org/@formily/reactive-vue/2.2.18
+    name: '@formily/reactive-vue'
+    version: 2.2.18
+    engines: {npm: '>=3.0.0'}
+    peerDependencies:
+      '@vue/composition-api': ^1.0.0-beta.1
+      vue: ^2.6.0 || >=3.0.0-rc.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+    dependencies:
+      '@formily/reactive': registry.npmjs.org/@formily/reactive/2.2.18
+      vue: registry.npmjs.org/vue/3.2.45
+      vue-demi: registry.npmjs.org/vue-demi/0.13.11_vue@3.2.45
+    dev: false
+
   registry.npmjs.org/@formily/reactive/2.2.17:
     resolution: {integrity: sha512-uEQzyfbm/Xaz60D1oXhsoanJ7L5BN9Uwi50z2llM9Wdv1xR/5e3kqVGXSlmmuExkrpyId/cf3D+WR3Ie1ewBOw==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/@formily/reactive/-/reactive-2.2.17.tgz}
     name: '@formily/reactive'
     version: 2.2.17
+    engines: {npm: '>=3.0.0'}
+    dev: false
+
+  registry.npmjs.org/@formily/reactive/2.2.18:
+    resolution: {integrity: sha512-ISgiKJ6gyK5jETtSAcHj/fZms02hxC7uZYUSeQVb2xnZcbEvyqaQAYAK+B79IexBskICGG+z4XaPqUrB/cxWcA==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/@formily/reactive/-/reactive-2.2.18.tgz}
+    name: '@formily/reactive'
+    version: 2.2.18
     engines: {npm: '>=3.0.0'}
     dev: false
 
@@ -530,6 +617,21 @@ packages:
       upper-case: registry.npmjs.org/upper-case/2.0.2
     dev: false
 
+  registry.npmjs.org/@formily/shared/2.2.18:
+    resolution: {integrity: sha512-9cSxjKqV2CZI1vNkJOFb0ES5VvS7+w9apXcqoVvVMwILH58dp7jqeWGH+PZxMQsYZJirwr+1vx9pI+qlmHMOJA==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/@formily/shared/-/shared-2.2.18.tgz}
+    name: '@formily/shared'
+    version: 2.2.18
+    engines: {npm: '>=3.0.0'}
+    dependencies:
+      '@formily/path': registry.npmjs.org/@formily/path/2.2.18
+      camel-case: registry.npmjs.org/camel-case/4.1.2
+      lower-case: registry.npmjs.org/lower-case/2.0.2
+      no-case: registry.npmjs.org/no-case/3.0.4
+      param-case: registry.npmjs.org/param-case/3.0.4
+      pascal-case: registry.npmjs.org/pascal-case/3.1.2
+      upper-case: registry.npmjs.org/upper-case/2.0.2
+    dev: false
+
   registry.npmjs.org/@formily/validator/2.2.17:
     resolution: {integrity: sha512-BCUr5MmoWT7irDGqMod1Iu9zTMPOqrOL2sGqmaKYP6mu2n045EXFUHa4v7kNZN7heC+pBuDxSrhmO0O1QfK+5g==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/@formily/validator/-/validator-2.2.17.tgz}
     name: '@formily/validator'
@@ -539,11 +641,20 @@ packages:
       '@formily/shared': registry.npmjs.org/@formily/shared/2.2.17
     dev: false
 
-  registry.npmjs.org/@formily/vue/2.2.17_prq2uz4lho2pwp6irk4cfkrxwu:
-    resolution: {integrity: sha512-Ek/rRfd1PFgKYzPGtGHY13nBGN5mfNpv3aku/Pg9GiNZaMu2oflb8bpRpkXzqHtsG/w5a4erqQSkUlM7lXWBeA==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/@formily/vue/-/vue-2.2.17.tgz}
-    id: registry.npmjs.org/@formily/vue/2.2.17
+  registry.npmjs.org/@formily/validator/2.2.18:
+    resolution: {integrity: sha512-oq5TvFD3NFN3wHH0+fslT0xCEG7oLfwyPfD3pYGRc3xOlgEzBAJSPDW/2G3vhEvivfYW/cJpsNsYdkNOyF+zyw==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/@formily/validator/-/validator-2.2.18.tgz}
+    name: '@formily/validator'
+    version: 2.2.18
+    engines: {npm: '>=3.0.0'}
+    dependencies:
+      '@formily/shared': registry.npmjs.org/@formily/shared/2.2.18
+    dev: false
+
+  registry.npmjs.org/@formily/vue/2.2.18_prq2uz4lho2pwp6irk4cfkrxwu:
+    resolution: {integrity: sha512-RaNrfwJjkmNHswU/SAVJJHfXg9Gk971b4ZhoUsLmq9ZEa4ttohg71HPUClwMiwgSkakZWvqIiofPYkg4LwkjbQ==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/@formily/vue/-/vue-2.2.18.tgz}
+    id: registry.npmjs.org/@formily/vue/2.2.18
     name: '@formily/vue'
-    version: 2.2.17
+    version: 2.2.18
     engines: {npm: '>=3.0.0'}
     hasBin: true
     requiresBuild: true
@@ -554,12 +665,12 @@ packages:
       '@vue/composition-api':
         optional: true
     dependencies:
-      '@formily/core': registry.npmjs.org/@formily/core/2.2.17
-      '@formily/json-schema': registry.npmjs.org/@formily/json-schema/2.2.17_typescript@4.9.4
-      '@formily/reactive': registry.npmjs.org/@formily/reactive/2.2.17
-      '@formily/reactive-vue': registry.npmjs.org/@formily/reactive-vue/2.2.17_vue@3.2.45
-      '@formily/shared': registry.npmjs.org/@formily/shared/2.2.17
-      '@formily/validator': registry.npmjs.org/@formily/validator/2.2.17
+      '@formily/core': registry.npmjs.org/@formily/core/2.2.18
+      '@formily/json-schema': registry.npmjs.org/@formily/json-schema/2.2.18_typescript@4.9.4
+      '@formily/reactive': registry.npmjs.org/@formily/reactive/2.2.18
+      '@formily/reactive-vue': registry.npmjs.org/@formily/reactive-vue/2.2.18_vue@3.2.45
+      '@formily/shared': registry.npmjs.org/@formily/shared/2.2.18
+      '@formily/validator': registry.npmjs.org/@formily/validator/2.2.18
       fs-extra: registry.npmjs.org/fs-extra/10.1.0
       vue: registry.npmjs.org/vue/3.2.45
       vue-demi: registry.npmjs.org/vue-demi/0.13.11_vue@3.2.45
@@ -1127,6 +1238,14 @@ packages:
     hasBin: true
     dev: true
 
+  registry.npmjs.org/hoist-non-react-statics/3.3.2:
+    resolution: {integrity: sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz}
+    name: hoist-non-react-statics
+    version: 3.3.2
+    dependencies:
+      react-is: registry.npmjs.org/react-is/16.13.1
+    dev: false
+
   registry.npmjs.org/iconv-lite/0.6.3:
     resolution: {integrity: sha512-4fCk79wshMdzMp2rH06qWrJE4iolqLhCUH+OiuIgU++RB0+94NlDL81atO7GX55uUKueo0txHNtvEyI6D7WdMw==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.6.3.tgz}
     name: iconv-lite
@@ -1496,6 +1615,12 @@ packages:
     version: 1.0.1
     dev: true
     optional: true
+
+  registry.npmjs.org/react-is/16.13.1:
+    resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz}
+    name: react-is
+    version: 16.13.1
+    dev: false
 
   registry.npmjs.org/readdirp/3.6.0:
     resolution: {integrity: sha512-hOS089on8RduqdbhvQ5Z37A0ESjsqz6qnRcffsMU3495FuTdqSm+7bhJ29JvIOsBDEEnan5DPu9t3To9VRlMzA==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/readdirp/-/readdirp-3.6.0.tgz}

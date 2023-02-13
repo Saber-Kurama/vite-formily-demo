@@ -1,10 +1,12 @@
 <script setup lang="ts">
-import Demo1 from "./components/ElementDemo/Demo1.vue";
+import DemoCheckboxTemplate from "./components/ElementDemo/DemoCheckboxTemplate.vue";
+import CustomCheckboxTemplate from "./components/ElementDemo/CustomCheckboxTemplate.vue";
 </script>
 
 <template>
   <div>
-    <Demo1 />
+    <DemoCheckboxTemplate />
+    <CustomCheckboxTemplate />
   </div>
 </template>
 
