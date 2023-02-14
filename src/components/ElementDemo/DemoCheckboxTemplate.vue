@@ -32,6 +32,6 @@ import { FormItem, Checkbox, Submit } from "@formily/element-plus";
 const form = createForm();
 
 const onSubmit = (value: any) => {
-  console.log(form.getState());
+  console.log(form);
 };
 </script>

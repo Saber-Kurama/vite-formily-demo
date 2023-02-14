@@ -10,15 +10,15 @@ export const useAttach = <T extends IRecycleTarget>(target: Ref<T>): Ref<T> => {
   watch(target, (v, old, onInvalidate) => {
     if (v && v !== old) {
       old?.onUnmount();
-      nextTick(() => v.onMount());
-      onInvalidate(() => v.onUnmount());
+      nextTick(() => v.onMount?.());
+      onInvalidate(() => v.onUnmount?.());
     }
   });
   onMounted(() => {
-    target.value?.onMount();
+    target.value?.onMount?.();
   });
   onUnmounted(() => {
-    target.value?.onUnmount();
+    target.value?.onUnmount?.();
   });
   return target;
 };
