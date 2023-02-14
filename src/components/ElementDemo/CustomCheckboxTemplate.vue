@@ -5,7 +5,9 @@
       title="是否确认"
       :decorator="[FormItem]"
       :component="[Checkbox]"
-    />
+    >
+      asdasd====asasd
+    </Field>
     <!-- <ArrayField
       name="multiple"
       title="复选"
@@ -25,8 +27,7 @@
 
 <script lang="ts" setup>
 import { createForm } from "@formily/core";
-import { Field } from "@formily/vue";
-import { FormProvider } from "../../../packages/vue/index";
+import { FormProvider, Field } from "../../../packages/vue/index";
 import { ElButton } from "element-plus";
 import { FormItem, Checkbox, Submit } from "@formily/element-plus";
 

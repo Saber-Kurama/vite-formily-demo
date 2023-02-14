@@ -1,12 +1,7 @@
 <template>
   <div>
     <FormProvider :form="form">
-      <Field
-        name="single"
-        title="是否确认"
-        :decorator="[FormItem]"
-        :component="[Checkbox]"
-      />
+      <Field name="single" title="是否确认" :component="[Checkbox]" />
       <!-- <ArrayField
       name="multiple"
       title="复选"
