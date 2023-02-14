@@ -1,4 +1,5 @@
 import { JSXComponent } from "@formily/core/esm/types";
+import { FormPath } from "../../shared/path";
 
 export class Form {
   // 模型标签
