@@ -26,7 +26,7 @@
 </template>
 
 <script lang="ts" setup>
-import { createForm } from "@formily/core";
+import { createForm } from "../../../packages/core/index";
 import { FormProvider, Field } from "../../../packages/vue/index";
 import { ElButton } from "element-plus";
 import { FormItem, Checkbox, Submit } from "@formily/element-plus";
@@ -34,6 +34,6 @@ import { FormItem, Checkbox, Submit } from "@formily/element-plus";
 const form = createForm();
 
 const onSubmit = (value: any) => {
-  console.log(form.getState());
+  console.log(form);
 };
 </script>

@@ -1,7 +1,12 @@
 <template>
   <div>
     <FormProvider :form="form">
-      <Field name="single" title="是否确认" :component="[Checkbox]" />
+      <Field
+        name="single"
+        title="是否确认"
+        :decorator="[FormItem]"
+        :component="[Checkbox]"
+      />
       <!-- <ArrayField
       name="multiple"
       title="复选"
@@ -14,15 +19,8 @@
     >
     </ArrayField> -->
       <!-- <Submit @submit="onSubmit">提交</Submit> -->
-      <div @click="onSubmit">这是一个提交</div>
+      <div @click="onSubmit">这是一个提交aaa</div>
     </FormProvider>
-    <Field
-      name="single"
-      title="是否确认"
-      :decorator="[FormItem]"
-      :component="[Checkbox]"
-    />
-    <div>单独Field 不显示？</div>
   </div>
 </template>
 

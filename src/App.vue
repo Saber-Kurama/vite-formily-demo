@@ -6,6 +6,7 @@ import CustomCheckboxTemplate from "./components/ElementDemo/CustomCheckboxTempl
 <template>
   <div>
     <DemoCheckboxTemplate />
+    <div>-----分割线-----</div>
     <CustomCheckboxTemplate />
   </div>
 </template>
