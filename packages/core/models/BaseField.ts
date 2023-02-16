@@ -13,6 +13,7 @@ export class BaseField<TextType = any> {
   designable: boolean;
   // 字段节点路径
   address: FormPath;
+  // 字段数据路径 会过滤掉 虚拟节点
   path: FormPath;
   // 所属Form模型的实例
   form: Form;

@@ -13,6 +13,8 @@ export class Form {
   // 表单的属性
   // props: IFormProps<ValueType>;
   props: any; // 这个字段的意义
+  // filed 的 path 与 address 的映射关系
+  indexes: Record<string, string> = {};
   constructor(props: any) {
     console.log(props);
   }
