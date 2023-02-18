@@ -1,13 +1,16 @@
 <script setup lang="ts">
 import DemoCheckboxTemplate from "./components/ElementDemo/DemoCheckboxTemplate.vue";
 import CustomCheckboxTemplate from "./components/ElementDemo/CustomCheckboxTemplate.vue";
+import TestConnect from "./components/ElementDemo/TestConnect.vue";
 </script>
 
 <template>
   <div>
-    <DemoCheckboxTemplate />
-    <div>-----分割线-----</div>
+    <!-- <DemoCheckboxTemplate />
+    <div>-----分割线-----</div>-->
     <CustomCheckboxTemplate />
+    <div>-----分割线-----</div>
+    <TestConnect />
   </div>
 </template>
 

@@ -5,6 +5,7 @@ import "@formily/antdv-x3/dist/antdv-x3.css";
 import "ant-design-vue/dist/antd.css";
 import ElementPlus from "element-plus";
 import "element-plus/dist/index.css";
+import "@arco-design/web-vue/dist/arco.css";
 
 const app = createApp(App);
 
