@@ -13,4 +13,15 @@ export class Field extends BaseField {
     this.designable = designable;
     this.locate(address);
   }
+
+  get value() {
+    return this.form.getValuesIn(this.path);
+  }
+
+  set value(value) {
+    this.setValue(value);
+  }
+  setValue = (value?: any) => {
+    this.form.setValuesIn(this.path, value);
+  };
 }

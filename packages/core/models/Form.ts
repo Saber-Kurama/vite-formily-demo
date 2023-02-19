@@ -30,9 +30,7 @@ export class Form {
 
   // 表单 和  field 进行关联
   createField = (props: any): any => {
-    console.log("===============", props.name);
     const address = FormPath.parse(props.basePath).concat(props.name);
-    console.log("===============address", this);
     const identifier = address.toString();
     if (!identifier) return;
     if (!this.fields[identifier] || this.props.designable) {
@@ -41,8 +39,18 @@ export class Form {
       // });
       // this.notify(LifeCycleTypes.ON_FORM_GRAPH_CHANGE);
     }
-    console.log("identifier----", identifier);
-    console.log("this.fields[identifier]----", this.fields[identifier]);
     return this.fields[identifier] as any;
+  };
+
+  /** 状态操作模型 **/
+
+  //  设置单个值
+  setValuesIn = (pattern: any, value: any) => {
+    FormPath.setIn(this.values, pattern, value);
+  };
+
+  // 获取单个值
+  getValuesIn = (pattern: any) => {
+    return FormPath.getIn(this.values, pattern);
   };
 }
