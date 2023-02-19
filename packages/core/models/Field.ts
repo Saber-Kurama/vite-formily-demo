@@ -11,5 +11,6 @@ export class Field extends BaseField {
     this.form = form;
     this.props = props;
     this.designable = designable;
+    this.locate(address);
   }
 }

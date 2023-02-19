@@ -1,10 +1,10 @@
 import { h, defineComponent } from "vue";
-import { formatVue3VNodeData } from "../utils/formatVNodeData";
 import ReactiveField from "./ReactiveField";
 
 export default defineComponent({
   name: "Field",
   props: {
+    name: {},
     decorator: Array,
     component: Array,
   },
