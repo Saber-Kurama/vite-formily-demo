@@ -4,7 +4,7 @@
       name="single"
       title="是否确认"
       :decorator="[FormItem]"
-      :component="[Checkbox]"
+      :component="[Input]"
     >
       asdasd====asasd
     </Field>
@@ -29,7 +29,7 @@
 import { createForm } from "../../../packages/core/index";
 import { FormProvider, Field } from "../../../packages/vue/index";
 import { ElButton } from "element-plus";
-import { FormItem, Checkbox, Submit } from "@formily/element-plus";
+import { FormItem, Checkbox, Submit, Input } from "@formily/element-plus";
 
 const form = createForm();
 

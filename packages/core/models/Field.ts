@@ -1,3 +1,4 @@
+import { toArr } from "@formily/shared";
 import { BaseField } from "./BaseField";
 
 export class Field extends BaseField {
@@ -12,6 +13,11 @@ export class Field extends BaseField {
     this.props = props;
     this.designable = designable;
     this.locate(address);
+    this.initialize();
+  }
+
+  protected initialize() {
+    this.component = toArr(this.props.component);
   }
 
   get value() {

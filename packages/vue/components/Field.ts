@@ -1,4 +1,5 @@
 import { h, defineComponent } from "vue";
+import { getRawComponent } from "../utils/getRawComponent";
 import ReactiveField from "./ReactiveField";
 
 export default defineComponent({
@@ -12,7 +13,10 @@ export default defineComponent({
     return () => {
       return h(
         ReactiveField as any,
-        { fieldType: "Field", fieldProps: { ...props } },
+        {
+          fieldType: "Field",
+          fieldProps: { ...props, ...getRawComponent(props) },
+        },
         slots
       );
     };
