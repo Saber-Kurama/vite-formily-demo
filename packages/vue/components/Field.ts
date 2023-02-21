@@ -9,7 +9,7 @@ export default defineComponent({
     decorator: Array,
     component: Array,
   },
-  setup(props: any, { slots }) {
+  setup(props: any, { slots, attrs }) {
     return () => {
       return h(
         ReactiveField as any,
